@@ -8,8 +8,9 @@ The key difference of DRPR-SAR is that it does not treat robustness simply as pe
 
 This forms a clear problem-to-method logic: identify the limitations of conventional defense paradigms, exploit the difference between stable and sensitive information in SAR representations, and build a robust recognition framework through representation decoupling, perturbation routing, and knowledge distillation.
 
-![1.1 Defense paradigm comparison](./1.1_Defense_Paradigm_Comparison.png)
+![Fig. 1 Defense paradigm comparison](./1.1_Defense_Paradigm_Comparison.png)
 
-Fig. 1.1 shows a conceptual comparison of three defense paradigms for SAR ATR. Data-centric defenses mainly perform detection or purification at the input level, model-centric defenses enhance the classifier through network or training strategies, while DRPR-SAR starts from the representation space, decouples stable task-relevant information from perturbation-sensitive variations, and actively routes perturbations to an auxiliary branch.
+Fig. 1 shows a conceptual comparison of three defense paradigms for SAR ATR. Data-centric defenses mainly perform detection or purification at the input level, model-centric defenses enhance the classifier through network or training strategies, while DRPR-SAR starts from the representation space, decouples stable task-relevant information from perturbation-sensitive variations, and actively routes perturbations to an auxiliary branch.
+
 
 
