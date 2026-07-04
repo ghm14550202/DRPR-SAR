@@ -10,7 +10,7 @@ This forms a clear problem-to-method logic: identify the limitations of conventi
 
 ![Fig. 1 Defense paradigm comparison](./1.1_Defense_Paradigm_Comparison.png)
 
-Fig. 1 shows a conceptual comparison of three defense paradigms for SAR ATR. Data-centric defenses mainly perform detection or purification at the input level, model-centric defenses enhance the classifier through network or training strategies, while DRPR-SAR starts from the representation space, decouples stable task-relevant information from perturbation-sensitive variations, and actively routes perturbations to an auxiliary branch.
+Fig. 1 shows the conceptual position of DRPR-SAR relative to existing SAR ATR defense paradigms. Data-centric defenses act before recognition, either detecting adversarial inputs or purifying the whole input image; model-centric defenses strengthen the classifier through training or architectural changes, but still operate on a unified representation. DRPR-SAR introduces a third route: it explicitly controls where adversarial effects are encoded inside the representation space. The figure is useful as a high-level map of the paper because it explains why the proposed method focuses on decoupling stable task-relevant information from perturbation-sensitive variations instead of only suppressing perturbations at the input or classifier level.
 
 
 
