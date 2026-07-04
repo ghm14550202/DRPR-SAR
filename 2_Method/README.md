@@ -20,7 +20,7 @@ Fig. 3 shows the overall framework of DRPR-SAR. The method consists of two stage
 
 During inference, the model mainly relies on the redundant stream for classification. The discriminative stream absorbs and represents perturbation-sensitive variations, while the redundant stream provides a more stable representation for target recognition. This design allows adversarial effects to be controlled in the representation space rather than simply suppressed at the input level.
 
-![Fig. 4 TGDM encoder architecture](./2.2_TGDM_Encoder_Architecture.png)
+![Fig. 3 TGDM encoder architecture](./2.2_TGDM_Encoder_Architecture.png)
 
-Fig. 4 further illustrates the encoder architecture used in the rotation-enhanced VQ-VAE based TGDM. The encoder uses convolutional blocks, normalization, nonlinear activation, and residual blocks to extract latent SAR representations before quantization and reconstruction. This structure provides the basis for generating stable redundant information and perturbation-sensitive discriminative information, enabling the following perturbation routing stage to separate final recognition from attack-induced variations.
+Fig. 3 further illustrates the encoder architecture used in the rotation-enhanced VQ-VAE based TGDM. The encoder uses convolutional blocks, normalization, nonlinear activation, and residual blocks to extract latent SAR representations before quantization and reconstruction. This structure provides the basis for generating stable redundant information and perturbation-sensitive discriminative information, enabling the following perturbation routing stage to separate final recognition from attack-induced variations.
 
