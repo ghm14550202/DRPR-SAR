@@ -1,0 +1,120 @@
+| Preparing SAR dataset...
+| | Preparing FUSAR dataset...
+
+Evaluating Batches:   0%|          | 0/23 [00:00<?, ?it/s]
+Evaluating Batches:   4%|▍         | 1/23 [06:37<2:25:55, 397.97s/it]
+Evaluating Batches:   9%|▊         | 2/23 [13:17<2:19:30, 398.60s/it]
+Evaluating Batches:  13%|█▎        | 3/23 [19:25<2:08:16, 384.83s/it]
+Evaluating Batches:  17%|█▋        | 4/23 [25:32<1:59:34, 377.63s/it]
+Evaluating Batches:  22%|██▏       | 5/23 [31:40<1:52:19, 374.40s/it]
+Evaluating Batches:  26%|██▌       | 6/23 [37:23<1:43:03, 363.76s/it]
+Evaluating Batches:  30%|███       | 7/23 [43:17<1:36:06, 360.41s/it]
+Evaluating Batches:  35%|███▍      | 8/23 [49:15<1:29:57, 359.85s/it]
+Evaluating Batches:  39%|███▉      | 9/23 [55:42<1:25:52, 368.04s/it]
+Evaluating Batches:  43%|████▎     | 10/23 [1:01:17<1:17:33, 357.97s/it]
+Evaluating Batches:  48%|████▊     | 11/23 [1:07:11<1:11:19, 356.66s/it]
+Evaluating Batches:  52%|█████▏    | 12/23 [1:12:43<1:04:02, 349.35s/it]
+Evaluating Batches:  57%|█████▋    | 13/23 [1:18:18<57:28, 344.84s/it]  
+Evaluating Batches:  61%|██████    | 14/23 [1:24:03<51:45, 345.04s/it]
+Evaluating Batches:  65%|██████▌   | 15/23 [1:30:06<46:42, 350.35s/it]
+Evaluating Batches:  70%|██████▉   | 16/23 [1:35:47<40:32, 347.46s/it]
+Evaluating Batches:  74%|███████▍  | 17/23 [1:41:36<34:48, 348.09s/it]
+Evaluating Batches:  78%|███████▊  | 18/23 [1:47:20<28:53, 346.70s/it]
+Evaluating Batches:  83%|████████▎ | 19/23 [1:53:21<23:24, 351.10s/it]
+Evaluating Batches:  87%|████████▋ | 20/23 [1:58:49<17:12, 344.02s/it]
+Evaluating Batches:  91%|█████████▏| 21/23 [2:04:35<11:29, 344.81s/it]
+Evaluating Batches:  96%|█████████▌| 22/23 [2:09:55<05:37, 337.34s/it]
+Evaluating Batches: 100%|██████████| 23/23 [2:15:25<00:00, 334.98s/it]
+Evaluating Batches: 100%|██████████| 23/23 [2:15:25<00:00, 353.26s/it]
+OVERALL
+ATTACK NoAttack	accuracy = 89.0
+CLASSWISE NoAttack_TGDM_Cr	overall_accuracy = 89.01
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	421	434	96.12	97.00	-4
+Cargo	156	123	185	78.85	66.49	29
+CoastalLands_island	303	289	307	95.38	94.14	4
+Fishing	106	62	91	58.49	68.13	-15
+LandPatches	487	432	499	88.71	86.57	12
+OtherShip	133	102	128	76.69	79.69	-5
+SeaClutterWaves	590	563	600	95.42	93.83	10
+SeaPatches	535	484	524	90.47	92.37	-11
+StrongFalseAlarms	128	112	124	87.50	90.32	-4
+Tanker	64	29	48	45.31	60.42	-16
+ATTACK AutoAttack	accuracy = 85.5
+CLASSWISE AutoAttack_TGDM_Cr	overall_accuracy = 85.51
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	417	437	95.21	95.42	-1
+Cargo	156	116	177	74.36	65.54	21
+CoastalLands_island	303	253	289	83.50	87.54	-14
+Fishing	106	57	91	53.77	62.64	-15
+LandPatches	487	423	517	86.86	81.82	30
+OtherShip	133	73	112	54.89	65.18	-21
+SeaClutterWaves	590	550	611	93.22	90.02	21
+SeaPatches	535	492	530	91.96	92.83	-5
+StrongFalseAlarms	128	108	129	84.38	83.72	1
+Tanker	64	25	47	39.06	53.19	-17
+ATTACK FGSM	accuracy = 86.0
+CLASSWISE FGSM_TGDM_Cr	overall_accuracy = 85.99
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	418	436	95.43	95.87	-2
+Cargo	156	117	183	75.00	63.93	27
+CoastalLands_island	303	272	306	89.77	88.89	3
+Fishing	106	53	92	50.00	57.61	-14
+LandPatches	487	415	502	85.22	82.67	15
+OtherShip	133	99	126	74.44	78.57	-7
+SeaClutterWaves	590	517	584	87.63	88.53	-6
+SeaPatches	535	512	544	95.70	94.12	9
+StrongFalseAlarms	128	101	122	78.91	82.79	-6
+Tanker	64	24	45	37.50	53.33	-19
+ATTACK PGD	     accuracy = 86.2
+CLASSWISE PGD_TGDM_Cr	overall_accuracy = 86.19
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	414	433	94.52	95.61	-5
+Cargo	156	124	190	79.49	65.26	34
+CoastalLands_island	303	272	303	89.77	89.77	0
+Fishing	106	52	89	49.06	58.43	-17
+LandPatches	487	421	505	86.45	83.37	18
+OtherShip	133	93	123	69.92	75.61	-10
+SeaClutterWaves	590	519	587	87.97	88.42	-3
+SeaPatches	535	513	544	95.89	94.30	9
+StrongFalseAlarms	128	101	122	78.91	82.79	-6
+Tanker	64	25	44	39.06	56.82	-20
+ATTACK CW	    accuracy = 85.7
+CLASSWISE CW_TGDM_Cr	overall_accuracy = 85.71
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	420	438	95.89	95.89	0
+Cargo	156	114	171	73.08	66.67	15
+CoastalLands_island	303	274	301	90.43	91.03	-2
+Fishing	106	56	94	52.83	59.57	-12
+LandPatches	487	415	511	85.22	81.21	24
+OtherShip	133	83	114	62.41	72.81	-19
+SeaClutterWaves	590	545	604	92.37	90.23	14
+SeaPatches	535	483	528	90.28	91.48	-7
+StrongFalseAlarms	128	108	132	84.38	81.82	4
+Tanker	64	22	47	34.38	46.81	-17
+ATTACK OnePixel	accuracy = 86.5
+CLASSWISE OnePixel_TGDM_Cr	overall_accuracy = 86.50
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	420	436	95.89	96.33	-2
+Cargo	156	115	177	73.72	64.97	21
+CoastalLands_island	303	285	308	94.06	92.53	5
+Fishing	106	52	92	49.06	56.52	-14
+LandPatches	487	418	499	85.83	83.77	12
+OtherShip	133	97	127	72.93	76.38	-6
+SeaClutterWaves	590	559	601	94.75	93.01	11
+SeaPatches	535	466	521	87.10	89.44	-14
+StrongFalseAlarms	128	108	124	84.38	87.10	-4
+Tanker	64	23	55	35.94	41.82	-9
+ATTACK Square	accuracy = 83.5
+CLASSWISE Square_TGDM_Cr	overall_accuracy = 83.50
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+Bridges	438	415	434	94.75	95.62	-4
+Cargo	156	111	182	71.15	60.99	26
+CoastalLands_island	303	251	289	82.84	86.85	-14
+Fishing	106	44	86	41.51	51.16	-20
+LandPatches	487	416	518	85.42	80.31	31
+OtherShip	133	64	115	48.12	55.65	-18
+SeaClutterWaves	590	547	616	92.71	88.80	26
+SeaPatches	535	479	526	89.53	91.06	-9
+StrongFalseAlarms	128	110	128	85.94	85.94	0
+Tanker	64	18	46	28.12	39.13	-18

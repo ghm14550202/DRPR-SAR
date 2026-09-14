@@ -1,0 +1,106 @@
+| Preparing SAR dataset...
+| | Preparing mstar dataset...
+
+Evaluating Batches:   0%|          | 0/9 [00:00<?, ?it/s]
+Evaluating Batches:  11%|█         | 1/9 [06:36<52:48, 396.09s/it]
+Evaluating Batches:  22%|██▏       | 2/9 [12:51<44:47, 383.99s/it]
+Evaluating Batches:  33%|███▎      | 3/9 [18:58<37:36, 376.04s/it]
+Evaluating Batches:  44%|████▍     | 4/9 [25:29<31:49, 381.88s/it]
+Evaluating Batches:  56%|█████▌    | 5/9 [31:47<25:22, 380.72s/it]
+Evaluating Batches:  67%|██████▋   | 6/9 [37:58<18:52, 377.50s/it]
+Evaluating Batches:  78%|███████▊  | 7/9 [44:14<12:33, 376.98s/it]
+Evaluating Batches:  89%|████████▉ | 8/9 [50:27<06:15, 375.72s/it]
+Evaluating Batches: 100%|██████████| 9/9 [52:02<00:00, 287.87s/it]
+Evaluating Batches: 100%|██████████| 9/9 [52:02<00:00, 346.95s/it]
+OVERALL
+ATTACK NoAttack	accuracy = 98.4
+CLASSWISE NoAttack_TGDM_Cr	overall_accuracy = 98.45
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	112	114	98.25	98.25	0
+BMP2_SN_9566	85	84	84	98.82	100.00	-1
+BRDM_2	114	111	112	97.37	99.11	-2
+BTR70_SN_C71	85	83	85	97.65	97.65	0
+BTR_60	90	88	91	97.78	96.70	1
+D7	114	113	114	99.12	99.12	0
+T62	114	114	116	100.00	98.28	2
+T72_SN_132	85	84	86	98.82	97.67	1
+ZIL131	114	114	116	100.00	98.28	2
+ZSU_23_4	114	110	111	96.49	99.10	-3
+ATTACK AutoAttack	accuracy = 97.0
+CLASSWISE AutoAttack_TGDM_Cr	overall_accuracy = 96.99
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	108	113	94.74	95.58	-1
+BMP2_SN_9566	85	81	84	95.29	96.43	-1
+BRDM_2	114	108	112	94.74	96.43	-2
+BTR70_SN_C71	85	82	85	96.47	96.47	0
+BTR_60	90	87	91	96.67	95.60	1
+D7	114	112	115	98.25	97.39	1
+T62	114	112	115	98.25	97.39	1
+T72_SN_132	85	84	86	98.82	97.67	1
+ZIL131	114	112	115	98.25	97.39	1
+ZSU_23_4	114	112	113	98.25	99.12	-1
+ATTACK FGSM	accuracy = 96.9
+CLASSWISE FGSM_TGDM_Cr	overall_accuracy = 96.89
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	107	107	93.86	100.00	-7
+BMP2_SN_9566	85	80	84	94.12	95.24	-1
+BRDM_2	114	107	109	93.86	98.17	-5
+BTR70_SN_C71	85	83	85	97.65	97.65	0
+BTR_60	90	89	92	98.89	96.74	2
+D7	114	113	117	99.12	96.58	3
+T62	114	112	118	98.25	94.92	4
+T72_SN_132	85	84	89	98.82	94.38	4
+ZIL131	114	112	114	98.25	98.25	0
+ZSU_23_4	114	110	114	96.49	96.49	0
+ATTACK PGD	       accuracy = 96.6
+CLASSWISE PGD_TGDM_Cr	overall_accuracy = 96.60
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	107	108	93.86	99.07	-6
+BMP2_SN_9566	85	78	81	91.76	96.30	-4
+BRDM_2	114	106	108	92.98	98.15	-6
+BTR70_SN_C71	85	82	87	96.47	94.25	2
+BTR_60	90	88	92	97.78	95.65	2
+D7	114	113	117	99.12	96.58	3
+T62	114	113	119	99.12	94.96	5
+T72_SN_132	85	84	90	98.82	93.33	5
+ZIL131	114	113	113	99.12	100.00	-1
+ZSU_23_4	114	110	114	96.49	96.49	0
+ATTACK CW   accuracy = 96.0
+CLASSWISE CW_TGDM_Cr	overall_accuracy = 96.02
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	108	112	94.74	96.43	-2
+BMP2_SN_9566	85	81	84	95.29	96.43	-1
+BRDM_2	114	108	112	94.74	96.43	-2
+BTR70_SN_C71	85	81	85	95.29	95.29	0
+BTR_60	90	86	92	95.56	93.48	2
+D7	114	111	115	97.37	96.52	1
+T62	114	110	115	96.49	95.65	1
+T72_SN_132	85	83	87	97.65	95.40	2
+ZIL131	114	111	116	97.37	95.69	2
+ZSU_23_4	114	109	111	95.61	98.20	-3
+ATTACK OnePixel	accuracy = 97.4
+CLASSWISE OnePixel_TGDM_Cr	overall_accuracy = 97.38
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	111	113	97.37	98.23	-1
+BMP2_SN_9566	85	82	86	96.47	95.35	1
+BRDM_2	114	109	110	95.61	99.09	-4
+BTR70_SN_C71	85	82	85	96.47	96.47	0
+BTR_60	90	86	89	95.56	96.63	-1
+D7	114	114	119	100.00	95.80	5
+T62	114	113	113	99.12	100.00	-1
+T72_SN_132	85	84	90	98.82	93.33	5
+ZIL131	114	114	116	100.00	98.28	2
+ZSU_23_4	114	107	108	93.86	99.07	-6
+ATTACK Square	accuracy = 96.5
+CLASSWISE Square_TGDM_Cr	overall_accuracy = 96.50
+class	support	correct	predicted	class_accuracy	precision	pred_bias
+2S1	114	109	113	95.61	96.46	-1
+BMP2_SN_9566	85	81	85	95.29	95.29	0
+BRDM_2	114	109	112	95.61	97.32	-2
+BTR70_SN_C71	85	82	84	96.47	97.62	-1
+BTR_60	90	86	92	95.56	93.48	2
+D7	114	112	116	98.25	96.55	2
+T62	114	111	115	97.37	96.52	1
+T72_SN_132	85	83	86	97.65	96.51	1
+ZIL131	114	111	116	97.37	95.69	2
+ZSU_23_4	114	109	110	95.61	99.09	-4

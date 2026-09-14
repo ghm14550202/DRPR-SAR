@@ -19,3 +19,5 @@ logs/*
 results/*
 !results/README.md
 results_*/
+!results_logs/
+!results_logs/**
