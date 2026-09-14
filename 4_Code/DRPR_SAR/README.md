@@ -86,7 +86,7 @@ data/
 `ImageFolder` assigns labels in sorted class-name order, so class names and
 their ordering must be consistent across splits.
 
-## Training
+## Training and Testing
 
 ### Stage 1: class-disentangled reconstruction
 
