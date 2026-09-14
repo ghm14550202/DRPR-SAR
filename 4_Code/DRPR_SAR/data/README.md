@@ -11,7 +11,7 @@ data/
 ├── FUSAR/
 │   ├── train/<class_name>/*
 │   └── test/<class_name>/*
-└── SOC_40classes/
+└── ATRNet-STAR/
     ├── train/<class_name>/*
     └── test/<class_name>/*
 ```
