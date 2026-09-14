@@ -1,0 +1,2 @@
+# Store DRPR-SAR result checkpoints with Git LFS.
+4_Code/DRPR_SAR/results/**/*.pth filter=lfs diff=lfs merge=lfs -text
